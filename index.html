@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+
+    <title>Sana Bir Şey Söylemek İstiyorum</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- FULL SCREEN VIDEO -->
+    <div class="video-background">
+        <video
+            id="backgroundVideo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        >
+            <source src="./background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <main class="page">
+
+        <section class="apology">
+
+            <div class="top-label">
+                <span class="tiny-star">✦</span>
+                SADECE SANA...
+                <span class="tiny-star">✦</span>
+            </div>
+
+            <div class="content">
+
+                <p class="intro">Bazen kelimeler yetmiyor...</p>
+
+                <h1>
+                    Özür
+                    <span>dilerim.</span>
+                </h1>
+
+                <p class="message">
+                    Seni kırdığım, üzdüğüm ya da kendini kötü hissetmene
+                    sebep olduğum için gerçekten üzgünüm.
+                    Bunu değiştiremem ama hatamı anladığımı ve
+                    telafi etmek istediğimi bilmeni isterim.
+                </p>
+
+                <div class="galaxy-area">
+
+                   
+                <div class="galaxy-frame">
+    <img
+        src="./galaksi.jpg"
+        alt="Uzayın derinliklerinde parlayan bir galaksi"
+        id="galaxyImage"
+        class="clickable-image"
+        title="Fotoğrafı büyüt"
+    >
+</div>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="image-lightbox" id="imageLightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fotoğrafı kapat">
+        &times;
+    </button>
+
+    <img
+        src="./galaksi.jpg"
+        alt="Büyütülmüş galaksi fotoğrafı"
+        id="lightboxImage"
+    >
+</div>
+
+
+
+
+
+
+
+
+
+                <p class="eyes-message">
+                    NASA'nın doğduğun gece görüntülediği bu galaksi
+                    bile gözlerinin güzelliğini anlatmaya yetmez.
+                    Gözlerin bu galaksi gibi parlıyor...
+                    Ve ben o gözlere her baktığımda yeniden sarhoş oluyorum.
+                </p>
+
+                <button class="letter-button" id="letterButton">
+                    Sana söylemek istediklerim
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+            <div class="bottom-note">
+                <span>WITH ALL MY HEART</span>
+                <span class="bottom-heart">♡</span>
+            </div>
+
+        </section>
+
+        <!-- PERSONAL LETTER -->
+        <section class="letter-section" id="letterSection">
+
+            <div class="letter-content">
+
+                <span class="letter-label">BİRKAÇ KELİME DAHA...</span>
+
+                <h2>
+                    İyi ki
+                    <span>hayatımdasın.</span>
+                </h2>
+
+                <p>
+                    Sana kusursuz olduğumu söyleyemem.
+                    Bazen hata yapıyorum, bazen yanlış davranıyorum.
+                    Ama seni üzmek hiçbir zaman istemediğim bir şey.
+                </p>
+
+                <p>
+                    Özrümün sadece kelimelerden ibaret kalmasını istemiyorum.
+                    Seni daha iyi anlamak, dinlemek ve aynı hataları
+                    tekrarlamamak istiyorum.
+                </p>
+
+                <p>
+                    Bütün bu evrenin içinde karşıma çıktığın için
+                    kendimi çok şanslı hissediyorum.
+                </p>
+
+                <p class="letter-ending">
+                    Seni seviyorum. ♡
+                </p>
+
+                <div class="signature">
+                    <span>Sevgiyle...</span>
+                </div>
+
+            </div>
+
+            <button class="back-button" id="backButton">
+                ↑ Başa dön
+            </button>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

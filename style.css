@@ -1,0 +1,581 @@
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    background: #050505;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* ==============================
+   VIDEO BACKGROUND
+   No overlay / no darkening
+============================== */
+
+.video-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: #050505;
+}
+
+.video-background video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ==============================
+   PAGE
+============================== */
+
+.page {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* ==============================
+   APOLOGY SECTION
+============================== */
+
+.apology {
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 24px 25px;
+    text-align: center;
+}
+
+.top-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.tiny-star {
+    color: #e7d5ff;
+    font-size: 14px;
+}
+
+.content {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 0;
+}
+
+.intro {
+    margin-bottom: 17px;
+
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+/* ==============================
+   MAIN TITLE
+============================== */
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(65px, 10vw, 105px);
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 3px 25px rgba(0, 0, 0, 0.65);
+}
+
+h1 span {
+    display: block;
+    color: #f0dfff;
+}
+
+/* ==============================
+   APOLOGY MESSAGE
+============================== */
+
+.message {
+    max-width: 520px;
+    margin: 0 auto 28px;
+
+    font-size: 14px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.96);
+
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+
+/* ==============================
+   GALAXY IMAGE
+============================== */
+
+.galaxy-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    margin: 25px auto;
+}
+
+.galaxy-frame {
+    width: 180px;
+    height: 180px;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        0 0 20px rgba(220, 190, 255, 0.3),
+        0 0 55px rgba(220, 190, 255, 0.15);
+}
+
+.galaxy-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform 1s ease;
+}
+
+.galaxy-frame:hover img {
+    transform: scale(1.1);
+}
+
+.galaxy-caption {
+    max-width: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+
+.caption-star {
+    color: #e7d5ff;
+    font-size: 16px;
+}
+
+.galaxy-caption p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.galaxy-caption strong {
+    color: #f0dfff;
+    font-weight: 600;
+}
+
+/* ==============================
+   EYES MESSAGE
+============================== */
+
+.eyes-message {
+    max-width: 530px;
+    margin: 0 auto 28px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95);
+}
+
+/* ==============================
+   LETTER BUTTON
+============================== */
+
+.letter-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    min-height: 50px;
+    padding: 0 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50px;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+
+    transition: background 0.3s ease, color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.letter-button:hover {
+    background: #ffffff;
+    color: #17101d;
+    transform: translateY(-3px);
+}
+
+.letter-button span {
+    font-size: 17px;
+}
+
+/* ==============================
+   BOTTOM NOTE
+============================== */
+
+.bottom-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.bottom-heart {
+    color: #f0dfff;
+    font-size: 18px;
+}
+
+/* ==============================
+   PERSONAL LETTER
+============================== */
+
+.letter-section {
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.letter-section.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.letter-content {
+    max-width: 650px;
+    width: 100%;
+}
+
+.letter-label {
+    display: block;
+    margin-bottom: 25px;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    color: #f0dfff;
+    text-shadow: 0 2px 12px #000;
+}
+
+.letter-content h2 {
+    margin-bottom: 35px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 8vw, 75px);
+    font-weight: 500;
+    line-height: 1.1;
+
+    text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+}
+
+.letter-content h2 span {
+    display: block;
+    color: #f0dfff;
+}
+
+.letter-content p {
+    margin: 0 auto 20px;
+
+    max-width: 550px;
+
+    font-size: 14px;
+    line-height: 2;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+
+.letter-content .letter-ending {
+    margin-top: 35px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+
+    color: #f0dfff;
+}
+
+.signature {
+    margin-top: 30px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-style: italic;
+
+    text-shadow: 0 2px 12px #000;
+}
+
+.back-button {
+    margin-top: 55px;
+
+    padding: 12px 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+
+    background: transparent;
+    color: #ffffff;
+
+    cursor: pointer;
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .apology {
+        padding: 30px 22px 20px;
+    }
+
+    .top-label {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .content {
+        padding: 25px 0;
+    }
+
+    h1 {
+        font-size: clamp(58px, 15vw, 78px);
+        letter-spacing: -3px;
+    }
+
+    .message {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .galaxy-frame {
+        width: 145px;
+        height: 145px;
+    }
+
+    .eyes-message {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .letter-button {
+        font-size: 11px;
+        padding: 0 20px;
+    }
+
+    .letter-content p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .apology {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    .galaxy-frame {
+        width: 125px;
+        height: 125px;
+    }
+
+}
+
+/* ==============================
+   REDUCED MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+/* ==============================
+   IMAGE LIGHTBOX
+============================== */
+
+.clickable-image {
+    cursor: zoom-in;
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    transform: scale(0.85);
+    transition: transform 0.3s ease;
+}
+
+.image-lightbox.active img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: #e7d5ff;
+}
+
+@media (max-width: 600px) {
+    .image-lightbox {
+        padding: 15px;
+    }
+
+    .image-lightbox img {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 20px;
+    }
+}
